@@ -32,10 +32,11 @@ namespace PracticeApp.Models
         [Required(ErrorMessage = "Please select your city")]
         public String City { get; set; }
 
-        [Required(ErrorMessage = "Please enter your gender")]
+        [Required(ErrorMessage = "Please select your gender")]
         public String Gender{ get; set; }
 
         [ValidateCheckbox(ErrorMessage = "Please Accept Terms")]
         public bool Terms{ get; set; }
     }
+
 }
