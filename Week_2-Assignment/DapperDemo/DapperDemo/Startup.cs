@@ -29,7 +29,7 @@ namespace DapperDemo
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DbConn")));
             services.AddControllersWithViews();
-            services.AddScoped<ICompanyRepository, CompanyReporitoryEF>();
+            services.AddScoped<ICompanyRepository, CompanyReporitorySP>();
             services.AddScoped<IEmployeeRepository, EmployeeReporitory>();
         }
 
